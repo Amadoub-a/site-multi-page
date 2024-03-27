@@ -1,0 +1,415 @@
+/* ------ Général ------ */
+
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap')
+/* Installation des polices*/
+
+*{box-sizing: border-box;}
+
+.container{
+	width: 90%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* ------- Theme -------- */
+/* Couleurs */
+.palette {
+	color: #F3F7F3; /* Teintes claires - Utilisez cette couleur comme arrière-plan pour vos conceptions sombres sur clair, ou la couleur du texte d'une conception inversée. */
+	color: #8594A9; /* Accent léger - Les couleurs d'accent peuvent être utilisées pour attirer l'attention sur les éléments de conception en contrastant avec le reste de la palette.*/
+	color: #F4592F; /* Couleur principale de la marque - Cette couleur doit être accrocheuse mais pas dure. Il peut être appliqué généreusement à votre mise en page en tant qu'identité principale.*/
+	color: #BB3C51; /* Touche sombre - Une autre couleur d'accent à considérer. Il n'est pas nécessaire d'utiliser toutes les couleurs - parfois, un schéma de couleurs simple fonctionne mieux.*/
+	color: #201520; /* Nuances sombres - Utilisez-le comme couleur de texte pour les motifs sombres sur clair ou comme arrière-plan pour les motifs inversés.*/
+}
+
+.fond-couleur-marque {
+	background-color: #F4592F;
+	color: #F3F7F3;
+}
+.theme-sombre {
+	background-color: #201520;
+	color: #F3F7F3;
+}
+.theme-sombre a {
+	color: #8594A9;
+}
+
+.theme-clair {
+	background-color: #F3F7F3;
+	color: #201520;
+}
+
+/* Style Général */
+body{
+	font-family: "Source Sans 3", sans-serif;
+  	font-optical-sizing: auto;
+  	font-style: normal;
+	color: #333;
+	line-height: 1.5;
+	font-size: 1.1rem;
+	padding: 0 1rem;
+	margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #0F4A81;
+}
+
+a {
+	text-decoration: none;
+}
+
+section a {
+	color: #0F4A81;
+}
+
+/* header */
+.top-page {
+	background-color: #0F4A81;
+	text-align: center;
+	color:#fff;
+}
+
+/* menu de navigation */
+nav li {
+	display: inline;
+	border: 2px #0F4A81 outset;
+	background-color: #0F4A81;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	box-shadow: 10px 5px 5px #0F4A81;
+}
+
+nav li a {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+nav li:hover{
+	display: inline;
+	background-color: #fff;
+}
+nav li a:hover{
+	color: #0F4A81;
+}
+
+.lien-active {
+	display: inline;
+	text-transform: uppercase;
+	color: #0F4A81;
+	background-color: #fff;
+}
+
+.lien-active a{
+	color: #0F4A81;
+}
+
+
+/* banniere */
+.banniere {
+	background-image: url("../img/banniere.jpg");
+	background-size:cover;
+	height: 400px;
+	padding-top: 5rem;
+}
+
+.contenu-banniere {
+	background-color: rgba(255,255,255,.8);
+	border: 1px dashed #333;
+	padding: 2rem;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.contenu-banniere em {
+	font-size: larger;
+	font-weight: 700;
+	text-decoration: solid;
+	color: #BB3C51;
+}
+
+/*breadcrumb*/
+
+.breadcrumb {
+	padding: 0 1rem;
+	margin-bottom: 1rem;
+}
+  
+.breadcrumb ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb a {
+	color: #333;
+}
+.breadcrumb span {
+	padding: 1rem;
+} 
+
+/* main */
+
+hr{
+	width: 100%;
+	border-color: #0F4A81;
+}
+
+.cadre-img{
+	border: 1px solid #0F4A81;
+	border-radius: 20px;
+}
+
+figcaption{
+	text-align: center;
+	text-transform: uppercase;
+	color: #0F4A81;
+}
+
+.card-produits {
+	height: 500px;
+	width: 23%;
+	text-align: center;
+	border: 1px solid #0F4A81;
+	border-radius: 12px;
+}
+
+.card-produits img {
+	width: 90%;
+	margin-top: 1rem;
+	border: #0F4A81 1px solid;
+}
+
+.card-produits h3 {
+	font-family: "Source Sans 3", sans-serif;
+  	font-optical-sizing: auto;
+  	font-style: normal;
+	margin-top: 0;
+}
+
+.card-produits p {
+	color: #0F4A81;
+	padding: 0 1rem;
+	font-size: medium;
+}
+
+.card-produits:hover{
+	box-shadow: 15px 5px #0F4A81;
+}
+
+.prix{
+	color: #0F4A81;
+	font-weight: 700;
+	font-size: 2rem;
+	font-style: italic;
+}
+
+.banniere-promotion {
+	background-image: url("../img/promotion.png");
+	background-size:cover;
+	height: 250px;
+	border-radius: 10px;
+	margin: 5rem 0;
+}
+
+.map {
+	border: #0F4A81 1.5px solid;
+	width: 43%;
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 3rem;
+}
+.adress-content {
+	border: #0F4A81 1.5px solid;
+	width: 43%;
+	text-align: justify;
+	padding: 2rem 2rem;
+	font-weight: 600;
+	box-shadow: 20px 20px 5px #0F4A81;
+	margin-bottom: 3rem;
+}
+
+.adress-content a {
+	color: #333;
+}
+
+.call-center{
+	width: 30%;
+}
+
+.call-center img{
+	width: 100%;
+}
+
+.avis-clients h3{
+	text-align: center;
+	color: #333;
+	font-family: "Source Sans 3", sans-serif;
+}
+
+.avis-clients div{
+	margin: 0 2rem;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.avis-clients span{
+	text-align: left;
+	font-size: 0.7rem;
+	color: #0F4A81;
+	font-weight: bold;
+}
+
+.titre-produit{
+	text-align: center;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.flex-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-box-categorie{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex-box-categorie > div{
+	margin-bottom: 2rem;
+}
+
+.col-2-3 {
+	width: 58%;
+}
+
+.col-1-3 {
+	width: 38%;
+	text-align: justify;
+}
+
+.col-1-3 span {
+	text-decoration: line-through;
+	color: red;
+}
+.col-1-3 img{
+	width: 100%;
+}
+.cadre-produit-details{
+	margin-top: 1rem;
+	padding: 1rem 1rem;
+}
+
+.cadre-produit-details img {
+	border: #0F4A81 solid 2px;
+	margin: 0 5px;
+}
+
+.video-presentation{
+	margin-top: 3rem;
+	height: 400px;
+}
+
+.video-presentation video{
+	height: 400px;
+	width: 100%;
+}
+
+
+.section-client img{
+	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+	border: #0F4A81 solid 2px;
+}
+
+
+/* tableau */
+
+table {
+	width: 70%;
+	border-collapse: collapse;
+	border: 3px solid #0F4A81;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+}
+
+table caption {
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-style: oblique;
+	font-size: larger;
+}
+
+th, td {
+  border: 3px solid #0F4A81;
+}
+
+tfoot span {
+	border: #0F4A81 solid 1px;
+	padding: 0.2rem 0.3rem;
+	margin: 0.3rem;
+	font-size: small;
+	color: #fff;
+	background-color: #0F4A81;
+	border-radius: 5px;
+}
+
+tfoot span:hover {
+	cursor: pointer;
+	color:#0F4A81;
+	background-color: #fff;
+}
+
+/* footer */
+
+footer {
+	background-color: #0F4A81;
+	color: #fff;
+	padding: 0 1rem;
+	margin-top: 2rem;
+}
+footer h4, a{
+	color: #fff;
+	text-align: center;
+	font-family: "Source Sans 3", sans-serif;
+  	font-optical-sizing: auto;
+  	font-style: normal;
+}
+
+footer hr {
+	border-color: #fff;
+	width: auto;
+}
+footer em{
+	text-decoration: underline;
+	color: burlywood;
+}
+footer ul {
+	list-style: none;
+	text-align: justify;
+}
+.copyright{
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+	padding-bottom: 1rem;
+}
+
+.retour-haut-page {
+	float: right;
+}
+
